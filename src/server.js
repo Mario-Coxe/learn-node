@@ -9,7 +9,9 @@ const server = http.createServer((req, res) => {
 
     if(method === 'GET'){
         console.log(users)
-        return res.end(JSON.stringify(users))
+        return res
+        .setHeader('Content-type',  'application/json')
+        .end(JSON.stringify(users))
     }
     if(method === 'POST'){
         users.push({
