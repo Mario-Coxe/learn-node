@@ -2,9 +2,8 @@
   "name": "01-fundamentos",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "commonjs",
   "scripts": {
-    "dev": "node --watch src/server.js"
+    "dev": "tsx watch src/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +13,7 @@
     "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^20.14.12",
     "eslint": "^8.57.0",
+    "tsx": "^4.19.1",
     "typescript": "^5.5.4"
   },
   "dependencies": {
